@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+    <head>
+        <title>Вход</title>
+        <meta content="text/html" charset="UTF-8" http-equiv="Content-Type" />
+        <link href="../css/login_form.css" rel="stylesheet" type="text/css">
+        <title>Login-Page</title>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1 id="system-name-header">ВХОД</h1>
+            </header>
+            <form method="POST" action="../../backend/login.php" name="Form1">
+                <fieldset class="main-page">
+                    <section class="form-item input-container">
+                        <input id="email" name="email" placeholder="Email" type="email" class="form-item">
+                    </section>
+                    <section class="form-item input-container">
+                        <input id="passwd" name="password" placeholder="Парола" type="password" class="form-item">
+                    </section>
+                    <button type="submit" value="Send" name="button1" class="login-button">ВХОД</button>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

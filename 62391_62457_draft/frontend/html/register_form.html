@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+    <head>
+        <meta content="text/html" charset="UTF-8" http-equiv="Content-Type" />
+        <link href="../css/register_form.css" rel="stylesheet" type="text/css">
+        <title>Register-Page</title>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1 id="system-name-header">РЕГИСТРАЦИЯ</h1>
+            </header>
+            <form class="form-container" method="POST" action="../../backend/register.php">
+                <fieldset class="main-page">
+                    <section class="form-item input-container">
+                        <input id="first_name" name="first_name" placeholder="Име" type="text" class="form-item" pattern="^[A-Za-z0-9_]*$">
+                    </section>
+                    <section class="form-item input-container">
+                        <input id="last_name" name="last_name" placeholder="Фамилия" type="text" class="form-item" pattern="^[A-Za-z0-9_]*$">
+                    </section>
+                    <section class="form-item input-container">
+                        <input id="email" name="email" placeholder="Email" type="email" class="form-item">
+                    </section>
+                    <section class="form-item input-container">
+                        <input id="passwd_1" name="password_1" placeholder="Парола" type="password" class="form-item">
+                    </section>
+                    <section class="form-item input-container">
+                        <input id="passwd_2" name="password_2" placeholder="Повтори парола" type="password" class="form-item">
+                    </section>
+                    <section class="form-item input-container">
+                        <select name="user-type" id="select-user" class="form-item">
+                            <option value="" disabled selected hidden>Вие сте</option>
+                            <option value="teacher">Преподавател</option>
+                            <option value="student">Студент</option>
+                        </select>
+                    </section>
+                    <button class="register-button">РЕГИСТРИРАЙ МЕ</button>
+                </fieldset>
+            </form>
+        </main>
+        <script src=""></script>
+    </body>
+</html>

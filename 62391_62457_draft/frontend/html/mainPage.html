@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/mainPage.css">
+        <script defer src="../js/dynamic_images.js"></script>
+        <script defer src="../js/room_buttons.js"></script>
+        <title>Main-Page</title>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <section class="form-inputs">
+                    <a href="../../index.html" class="form-item button-container"><button type="button" id="exit-button" class="main-button">ИЗХОД</button></a>
+                    <a href="schedule.html" class="form-item button-container"><button type="button" id="schedule-button" class="main-button">ГРАФИК</button></a>
+                </section>
+            </header>
+
+            <fieldset class=" image-fieldset ">
+                <section class="buttons_floors">
+                    <button class="btn_floor" id="btn0" onclick="showButtons(0,4)">0</button>
+                    <button class=" btn_floor " id="btn1" onclick="showButtons(1,1)">1</button>
+                    <button class="btn_floor " id="btn2" onclick="showButtons(2,3)">2</button>
+                    <button class="btn_floor " id="btn3" onclick="showButtons(3,12)">3</button>
+                    <button class="btn_floor " id="btn4" onclick="showButtons(4,4)">4</button>
+                    <button class="btn_floor " id="btn5" onclick="showButtons(5,4)">5</button>
+                </section>
+                <img class="image " src="../../images/floor0.png " alt=" ">
+                <script src="../js/dynamic_images.js "></script>
+            </fieldset>
+
+            <form method="POST" action="../../backend/reserveRoom.php">
+                <fieldset class="book-fieldset">
+                    <section class="form-inputs">
+                        <section class="form-item">
+                            <label for="date" class="date-label text">Дата:</label>
+                            <input name="date" type="date" id="date" class="date-input" data-date-inline-picker="true" />
+                        </section>
+                        <section class="form-item">
+                            <label for="start_time" class="text">Начален час: </label>
+                            <select name="start_time" id="start_time">
+                            <option value="8 ">8</option>
+                            <option value="9 ">9</option>
+                            <option value="10 ">10</option>
+                            <option value="11 ">11</option>
+                            <option value="11 ">12</option>
+                            <option value="11 ">13</option>
+                            <option value="11 ">14</option>
+                            <option value="11 ">15</option>
+                            <option value="11 ">16</option>
+                            <option value="11 ">17</option>
+                            <option value="11 ">18</option>
+                        </select>
+                        </section>
+                        <section class="form-item">
+                            <label for="end_time" class="text">Краен час: </label>
+                            <select name="end_time" id="end_time">
+                            <option value="8 ">10</option>
+                            <option value="9 ">11</option>
+                            <option value="10 ">12</option>
+                            <option value="11 ">13</option>
+                            <option value="11 ">14</option>
+                            <option value="11 ">15</option>
+                            <option value="11 ">16</option>
+                            <option value="11 ">17</option>
+                            <option value="11 ">18</option>
+                            <option value="11 ">19</option>
+                            <option value="11 ">20</option>
+                            <option value="11 ">21</option>
+                            </select>
+                        </section>
+                    </section>
+                    <section class="form-item">
+                        <input id="room" type="text" name="answer"> <br> <br>
+                        <button class="save-button" id="reserve-button" type="submit">ЗАПАЗИ</button>
+                    </section>
+                </fieldset>
+            </form>
+            <fieldset class="book-fieldset button-container" id="buttons-fieldset">
+                <section id="first-row" class="button-container">
+                </section>
+                <section id="second-row" class="button-container">
+                </section>
+            </fieldset>
+        </main>
+
+        <section class="dimmer non-visible "></section>
+
+    </body>
+
+</html>

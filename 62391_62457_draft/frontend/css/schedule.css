@@ -1,0 +1,182 @@
+    a.back,
+    .schedule {
+        display: inline-block;
+        margin: 0 0 20px;
+        padding: 14px 0;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .buttons_floors {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .btn_floor {
+        height: 50px;
+        width: 50px;
+        border-radius: 2rem;
+        border: 2px;
+        background: linear-gradient(to right top, var(--buttonFontFrom), var(--buttonFontTo));
+        font-size: large;
+    }
+    
+    .reserve_button {
+        min-height: 50px;
+        max-height: 50px;
+        min-width: 50px;
+        max-width: 50px;
+        border-radius: 2rem;
+        border: 2px;
+        background: linear-gradient(to right top, var(--buttonFontFrom), var(--buttonFontTo));
+        font-size: large;
+        margin-right: 5px;
+    }
+    
+    .image {
+        display: block;
+        margin: auto;
+        border: 1px solid rgb(2, 51, 24);
+        border-radius: 2rem;
+        width: 650px;
+    }
+    
+    body {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        /* color variables, used later in the code */
+        --mainFontFrom: #d6f582;
+        --mainFontTo: #b4eb1d;
+        --buttonSectionFrom: rgba(233, 238, 208, 0.7);
+        --buttonSectionTo: rgba(218, 218, 166, 0.3);
+        --loginShadow: rgba(255, 255, 255, 0.9);
+        --buttonFontFrom: #caf358;
+        --buttonFontTo: #85a52f;
+    }
+    
+    main {
+        min-height: 100vh;
+        background: linear-gradient(to right top, var(--mainFontFrom), var(--mainFontTo));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* main page header */
+    
+    #system-name-header {
+        margin-top: 0;
+    }
+    /* main page */
+    
+    .image-fieldset {
+        width: 800px;
+        min-width: 480px;
+        max-width: 800px;
+        padding: 2rem;
+        background: linear-gradient(to right bottom, var( --buttonSectionFrom), var(--buttonSectionTo));
+        box-shadow: 0 0 2rem var(--loginShadow);
+        border: 10px;
+        border-color: rgba(0, 0, 0, 0.3);
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+    }
+    
+    .book-fieldset {
+        width: 800px;
+        min-width: 480px;
+        max-width: 800px;
+        max-height: 100px;
+        min-height: 50px;
+        margin-top: 20px;
+        padding: 2rem;
+        background: linear-gradient(to right bottom, var( --buttonSectionFrom), var(--buttonSectionTo));
+        box-shadow: 0 0 2rem var(--loginShadow);
+        border: 10px;
+        border-color: rgba(0, 0, 0, 0.3);
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+    }
+    
+    .form-item {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .button-container {
+        margin-bottom: 0;
+    }
+    
+    .form-item button {
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+        padding: 0.5rem 1rem;
+        flex-grow: 2;
+    }
+    
+    a {
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+    }
+    
+    .main-button {
+        border-radius: 2rem;
+        margin-bottom: 20px;
+        border: 2px;
+        background: linear-gradient(to right top, var(--buttonFontFrom), var(--buttonFontTo));
+    }
+    
+    .main-button:hover {
+        background: linear-gradient(to left top, var(--buttonFontFrom), var(--buttonFontTo));
+        box-shadow: 0 0 1rem rgba(255, 255, 255, 0.7);
+    }
+    
+    .numbertext {
+        color: #072b02;
+        font-size: 16px;
+        padding: 8px 12px;
+        position: center;
+        top: 0;
+        text-align: center;
+    }
+    
+    .text {
+        color: black;
+        font-size: 20px;
+        width: 100%;
+        text-align: right;
+        margin-right: 10px;
+    }
+    
+    input {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 2rem;
+    }
+    
+    select {
+        border-radius: 2rem;
+    }
+    
+    #form-inputs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }

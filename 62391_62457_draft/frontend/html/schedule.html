@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/schedule.css">
+    <script defer src="../js/buttons_click.js"></script>
+    <script defer src="../js/room_buttons.js"></script>
+    <title>Schedule</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <a href="mainPage.html" class="form-item button-container"><button type="button" id="back-button" class="main-button">НАЗАД</button></a>
+        </header>
+
+        <fieldset class=" image-fieldset ">
+            <section class="buttons_floors">
+                <button class="btn_floor" id="btn0" onclick="showButtons(0)">0</button>
+                <button class=" btn_floor " id="btn1" onclick="showButtons(1)">1</button>
+                <button class="btn_floor " id="btn2" onclick="showButtons(2)">2</button>
+                <button class="btn_floor " id="btn3" onclick="showButtons(3)">3</button>
+                <button class="btn_floor " id="btn4" onclick="showButtons(4)">4</button>
+                <button class="btn_floor " id="btn5" onclick="showButtons(5)">5</button>
+            </section>
+            <section>
+                <img class="image " src="../../images/floor0.png " alt=" ">
+            </section>
+            <script src="../js/dynamic_images.js "></script>
+        </fieldset>
+
+        <fieldset class="book-fieldset button-container" id="buttons-fieldset">
+            <section id="first-row" class="button-container">
+            </section>
+            <section id="second-row" class="button-container">
+            </section>
+        </fieldset>
+        <fieldset class="book-fieldset" id="schedule-fieldset">
+        </fieldset>
+    </main>
+
+</body>
+
+</html>

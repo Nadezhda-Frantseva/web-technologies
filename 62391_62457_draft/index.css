@@ -1,0 +1,91 @@
+    body {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        --mainFontFrom: #d6f582;
+        --mainFontTo: #b4eb1d;
+        --buttonSectionFrom: rgba(233, 238, 208, 0.7);
+        --buttonSectionTo: rgba(218, 218, 166, 0.3);
+        --loginShadow: rgba(255, 255, 255, 0.9);
+        --buttonFontFrom: #caf358;
+        --buttonFontTo: #85a52f;
+    }
+    
+    main {
+        min-height: 100vh;
+        background: linear-gradient(to right top, var(--mainFontFrom), var(--mainFontTo));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #system-name-header {
+        margin-top: 0;
+    }
+    
+    #main-page {
+        min-width: 490px;
+        max-width: 490px;
+        padding: 2rem;
+        border-radius: 2rem;
+        background: linear-gradient(to right bottom, var( --buttonSectionFrom), var(--buttonSectionTo));
+        box-shadow: 0 0 2rem var(--loginShadow);
+        border: 10px;
+        border-color: rgba(0, 0, 0, 0.3);
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-item {
+        width: 100%;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .button-container {
+        margin-bottom: 0;
+    }
+    
+    .form-item button {
+        font-size: 1.5rem;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+        padding: 0.5rem 1rem;
+        flex-grow: 2;
+    }
+    
+    a {
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+    }
+    
+    #login-button {
+        border-radius: 2rem;
+        border: 2px;
+        background: linear-gradient(to right top, var(--buttonFontFrom), var(--buttonFontTo));
+        width: 100%
+    }
+    
+    #login-button:hover {
+        background: linear-gradient(to left top, var(--buttonFontFrom), var(--buttonFontTo));
+        box-shadow: 0 0 1rem rgba(255, 255, 255, 0.7);
+    }
+    
+    #registration-button {
+        border-radius: 2rem;
+        margin-bottom: 20px;
+        border: 2px;
+        background: linear-gradient(to right top, var(--buttonFontFrom), var(--buttonFontTo));
+    }
+    
+    #registration-button:hover {
+        background: linear-gradient(to left top, var(--buttonFontFrom), var(--buttonFontTo));
+        box-shadow: 0 0 1rem rgba(255, 255, 255, 0.7);
+    }
+  
